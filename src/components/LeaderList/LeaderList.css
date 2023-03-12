@@ -1,0 +1,37 @@
+.myposter img{
+   
+   width: 30%;
+   height: 400px;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   
+}
+.rank{
+   font-size: 50px;
+   color: #d9534f;
+}
+.myposter{
+   
+   display: inline;
+   
+}
+.mytitle{
+   font-size: 45px;
+}
+
+.detail{
+    width: 67%;
+   float: right;
+   margin: auto 0 auto 0;
+
+}
+
+.maindiv{
+   width: 80%;
+   margin: 0 auto 0 auto;
+}
+
+body{
+   background-color: black;
+   color: white;
+}

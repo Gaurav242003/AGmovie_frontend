@@ -1,0 +1,36 @@
+.fotter {
+    text-align: center;
+    font-size: large;
+    color: rgb(176, 174, 174);
+
+}
+
+.profile {
+    display: flex;
+    text-align: left;
+
+
+}
+
+.p1 {
+    margin-left: 20vw;
+
+
+}
+
+.p1 p a {
+    color: rgb(176, 174, 174);
+    font-size: smaller;
+    display: block;
+
+}
+
+.p2 {
+    margin-left: 44vw;
+}
+
+.p2 p a {
+    color: rgb(176, 174, 174);
+    font-size: smaller;
+    display: block;
+}

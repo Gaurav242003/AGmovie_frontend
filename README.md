@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The title of our project is - Movie Voting Platform, which is named as "AGmovies". It is a website on which users can sign up to nominate at most 5 movies in a contest which runs for 24 hours everyday. Users can search for movies, watch trailer, see the movies nominated by them and also the leaderboard for current contest. After every 24 hours, a new contest begins with a new leaderboard.
 
-## Available Scripts
+# Screenshots
 
-In the project directory, you can run:
 
-### `npm start`
+# Hosted URL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Features Implemented
+## Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1) In the home page, we can see movies by genre such as - Trending, Romance, Action and Animation.
+2) We also have a search bar to search for one's favourite movie to nominate.
+3) Users can watch trailer through a button provided in the description of each movie.
+4) Users can both nominate(atmost 5 movies) and de-nominate the movies using a button.
+5) We also have a Nominated page, which shows the movies nominated by the logged in user.
+6) We also have a Leaderboard page, which shows the top three movies in the on-going contest.
+7) We have a timer to display the time remaining for the contest to end.
 
-### `npm test`
+## Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1) The signup data is saved in the backend, which is used to verify the user while he/she tries to login.
+2) All the movies nominated by a particular user is saved in the database.
+3) Number of votes for a particular movie is also saved in the database to show the top 3 movies in the leaderboard page.
+4) The backend also has a timer, which deletes the Nominations and Leaderboard data after every 24 hours.
 
-### `npm run build`
+# Technologies/Libraries/Packages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) Technologies - Java Script, Mongoose, Express, React, Node
+2) Packages - react-icon, react-loading-skeleton, react-responsive-carousel, JSON Web Tokens 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Local Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Frontend
 
-### `npm run eject`
+1) Clone the repo
+2) Install the NPM Packages using command -
+   npm install
+3) Create a .env file and add values accordingly.
+4) To run the server, enter this command -
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1) Clone the repo
+2) Install the NPM Packages using command -
+   npm install
+3) Create a .env file and add values accordingly.
+4) To run the server, enter this command -
+   node app.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Team Members
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Our team consists of two members -
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1) Akhand Pratap Mall , Roll No - 2021IMG-003
+2) Gaurav Kumar , Roll No - 2021IMG-024
