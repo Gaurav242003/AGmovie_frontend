@@ -6,7 +6,7 @@ function Call(props) {
 
     function abc() {
 
-        fetch(`http://api.themoviedb.org/3/movie/${props.movie.id}/videos?api_key=${window.env.API_URL}`)
+        fetch(`https://api.themoviedb.org/3/movie/${props.movie.id}/videos?api_key=${window.env.API_URL}`)
             .then(res => res.json())
             .then(data => {
                 if (data.results.length === 0)
