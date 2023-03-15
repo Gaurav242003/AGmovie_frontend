@@ -6,7 +6,7 @@ import "./card.css";
 const Card = ({ movie, flag, userEmail }) => {
     const [nomDb, setnomDb] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8000/databaseCall")
+        fetch("https://agmoviesbackend.onrender.com/databaseCall")
             .then(res => res.json())
             .then(data => setnomDb(data.votedmovie))
     }, [])
@@ -28,7 +28,7 @@ const Card = ({ movie, flag, userEmail }) => {
             return;
         }
 
-        const postURL = "http://localhost:8000/nominate"
+        const postURL = "https://agmoviesbackend.onrender.com/nominate"
         fetch(postURL, {
             method: 'POST',
             headers: {
@@ -43,7 +43,7 @@ const Card = ({ movie, flag, userEmail }) => {
 
         })
 
-        const postURL2 = "http://localhost:8000/leaders"
+        const postURL2 = "https://agmoviesbackend.onrender.com/leaders"
         fetch(postURL2, {
             method: 'POST',
             headers: {

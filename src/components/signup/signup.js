@@ -23,7 +23,7 @@ const Signup = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const postURL = "http://localhost:8000/signup"
+    const postURL = "https://agmoviesbackend.onrender.com/signup"
     fetch(postURL, {
       method: 'POST',
       headers: {

@@ -24,7 +24,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const postURL = "http://localhost:8000/login"
+    const postURL = "https://agmoviesbackend.onrender.com/login"
     fetch(postURL, {
       method: 'POST',
       headers: {
@@ -48,7 +48,7 @@ const Login = () => {
 
       })
       .then(() => {
-        fetch("http://localhost:8000/isUserAuth", {
+        fetch("https://agmoviesbackend.onrender.com/isUserAuth", {
           headers: {
             "x-access-token": localStorage.getItem("token")
           }

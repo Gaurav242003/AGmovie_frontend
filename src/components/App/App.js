@@ -14,7 +14,7 @@ function App() {
   const [loggedin, setloggedin] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8000/isUserAuth", {
+    fetch("https://agmoviesbackend.onrender.com/isUserAuth", {
       headers: {
         "x-access-token": localStorage.getItem("token")
       }

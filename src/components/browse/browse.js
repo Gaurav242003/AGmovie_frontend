@@ -12,7 +12,7 @@ import Mycarousel from "../mycarousel/mycarousel";
 const Browse = () => {
     const [chk, setchk] = useState();
     useEffect(() => {
-        fetch("http://localhost:8000/isUserAuth", {
+        fetch("https://agmoviesbackend.onrender.com/isUserAuth", {
             headers: {
                 "x-access-token": localStorage.getItem("token")
             }
@@ -47,7 +47,7 @@ const Browse = () => {
 
     function handleClick(event) {
 
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=40b83306bb17ca363fd5786e24425ec4&query=${movieName}`)
+        fetch(`https://api.themoviedb.org/3/search/movie?api_key=${window.env.API_URL}&query=${movieName}`)
             .then(res => res.json())
             .then(data => setmovies(data.results));
 

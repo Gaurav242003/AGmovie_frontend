@@ -9,7 +9,7 @@ import "./nominated.css";
 function Nominated() {
     const [chk,setchk]=useState();
     useEffect(() => {
-        fetch("http://localhost:8000/isUserAuth", {
+        fetch("https://agmoviesbackend.onrender.com/isUserAuth", {
             headers: {
                 "x-access-token": localStorage.getItem("token")
             }
@@ -32,7 +32,7 @@ function Nominated() {
     const [nomDb, setnomDb] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/databaseCall")
+        fetch("https://agmoviesbackend.onrender.com/databaseCall")
             .then(res => res.json())
             .then(data => setnomDb(data.votedmovie))
     }, [])

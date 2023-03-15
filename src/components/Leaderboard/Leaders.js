@@ -15,7 +15,7 @@ function Leaders() {
 
   const [chk, setchk] = useState();
   useEffect(() => {
-    fetch("http://localhost:8000/isUserAuth", {
+    fetch("https://agmoviesbackend.onrender.com/isUserAuth", {
       headers: {
         "x-access-token": localStorage.getItem("token")
       }
@@ -39,7 +39,7 @@ function Leaders() {
   const [arr, SetArr] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/leaderDb")
+    fetch("https://agmoviesbackend.onrender.com/leaderDb")
       .then(res => res.json())
       .then(res => SetArr(res))
   }, [])
