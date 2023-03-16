@@ -15,3 +15,9 @@
 html{
     background-color: black;
 }
+
+@media only screen and (max-width: 600px){
+    .myh1{
+        font-size: 1.3rem;
+    }
+}

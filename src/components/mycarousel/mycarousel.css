@@ -57,6 +57,12 @@
     text-align: left;
     width: 50%;
 }
+.new{
+   display: inline;
+}
+.newr{
+    margin-right: 20px;
+}
 
 @media only screen and (max-width: 600px) {
     .posterImage {
@@ -77,4 +83,52 @@
     }
 
 
+}
+
+@media only screen and (max-width: 600px) {
+    .description{
+        font-size: 0.7rem;
+        width: 100%;
+        margin: 0px;
+
+    }
+
+   .btn-lg{
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 0.25rem;
+    
+   }
+ 
+   .posterImage__overlay{
+    padding:0rem 3rem 1.7rem 2rem;
+   }
+
+   .runtime {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.new{
+    display: block;
+    text-align: left;
+ }
+
+ .rating{
+    margin-left: 0%;
+ }
+
+ .title {
+   
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+    font-weight: 700;
+   
+}
+.nominate{
+    margin-left: 23px;
+}
+.carousel .control-dots{
+    z-index: 0;
+}
 }

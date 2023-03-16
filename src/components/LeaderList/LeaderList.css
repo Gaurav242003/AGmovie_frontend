@@ -35,3 +35,34 @@ body{
    background-color: black;
    color: white;
 }
+@media only screen and (max-width: 600px){
+   .myposter{
+      display: block;
+   }
+   .myposter img {
+      width: 100%;
+     border-radius: 10px;
+     
+      margin-bottom: 10px;
+  }
+  .maindiv{
+   width: 100%;
+   
+  }
+  .detail{
+   width: 100%;
+   float: none;
+  }
+  .rank{
+   font-size: 30px;
+
+  }
+  .mytitle{
+   font-size: 2rem;
+   line-height: normal;
+  }
+  .descriptionl{
+   font-size: 1rem;
+   margin-bottom: 10px;
+  }
+}

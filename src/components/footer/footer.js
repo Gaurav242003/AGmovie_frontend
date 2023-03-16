@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="fotter">
             <hr className="hr" />
-            Get in touch with developers <MdPeople />
+            <MdPeople /> Get in touch with developers <MdPeople />
             <div className="profile">
                 <div className="p1"> Gaurav Kumar
                     <p><a href="https://github.com/Gaurav242003" target="_blank"><AiOutlineGithub /> github</a>

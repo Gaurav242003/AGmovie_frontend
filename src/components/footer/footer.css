@@ -34,3 +34,16 @@
     font-size: smaller;
     display: block;
 }
+
+@media only screen and (max-width: 600px){
+    .fotter{
+        font-size: 0.9rem;
+        
+    }
+    .profile {
+        display: block;
+        text-align: left;
+    
+    
+    }
+}

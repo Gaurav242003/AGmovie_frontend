@@ -127,11 +127,15 @@ function Mycarousel(props) {
                                 <div className="posterImage__overlay">
                                     <div className="title">{movie ? movie.original_title : ""}</div>
                                     <div className="runtime">
-                                        {movie ? movie.release_date : ""}
+                                        <div className="new">
+                                        <span className="newr">{movie ? movie.release_date : ""} </span>
+                                         <span >{movie ? Math.ceil(movie.vote_average) : ""}</span>    
+                                            
+                                            <AiOutlineStar />
+                                        </div>
 
                                         <span className="rating">
-                                            {movie ? Math.ceil(movie.vote_average) : ""}
-                                            <AiOutlineStar />
+
                                             <Call movie={movie} />
                                             {newarr.find(id => id == movie.id) != undefined
                                                 ?
@@ -141,7 +145,7 @@ function Mycarousel(props) {
                                         </span>
 
                                     </div>
-                                    <div className="description">{movie ? movie.overview : ""}</div>
+                                    <div className="description">{movie ? movie.overview.slice(0, 150) + "..." : ""}</div>
                                 </div>
 
 

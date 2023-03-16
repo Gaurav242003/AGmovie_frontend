@@ -7,5 +7,24 @@
     color: white;
 }
 
+@media only screen and (max-width: 600px){
+    .genre{
+        font-size: 0.8rem;
+    }
+    .navbar-toggler{
+        font-size: 1rem;
+        padding: 0.25rem 0.50rem;
+    }
+
+    .btn-md{
+        --bs-btn-padding-y: 0.25rem;
+        --bs-btn-padding-x: 0.5rem;
+        --bs-btn-font-size: 0.875rem;
+        --bs-btn-border-radius: 0.25rem;
+    }
+    .form-control{
+        font-size: 0.8rem;
+    }
+}
 
 
