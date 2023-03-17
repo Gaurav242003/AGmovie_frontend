@@ -94,6 +94,9 @@ function Mycarousel(props) {
             event.target.className = "btn btn-outline-light btn-lg nominate";
         }
     }
+    let [transition, setTransition ] = useState('width-carousel')
+
+
     return (
         isLoading
             ?
@@ -110,7 +113,7 @@ function Mycarousel(props) {
                 showThumbs={false}
                 showStatus={false}
                 transitionTime={3}
-                key={props.typemov.length}
+               
                 className="posterImage"
             >
 

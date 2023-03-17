@@ -63,7 +63,7 @@ function LeaderList(props) {
                     </div>
 
                 </div>
-                <div className="descriptionl">{obj ? obj.overview : ""}</div>
+                <div className="descriptionl">{obj ? obj.overview.slice(0, 400) + "..." : ""}</div>
             </div>
             </>
             }
